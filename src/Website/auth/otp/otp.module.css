@@ -1,0 +1,202 @@
+.login_container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image_section {
+    text-align: center;
+    width: 56%
+}
+
+.image_section img {
+    width: 100%;
+    height: 100vh;
+}
+
+.form_section {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+  /*   align-items: center; */
+    justify-content: center;
+    width: 38%
+}
+
+
+
+.form_section h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+    color: #131118;
+}
+
+.form_section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+    width: 70%;
+    text-align: left !important;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container  label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6C7275;
+}
+
+.form_container input {
+    padding-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 40px;
+}
+
+.form_container {
+    width: 60%;
+}
+
+.newuser {
+    text-align: center;
+    font-size: 14px;
+    color: #131118;
+}
+
+.newuser p {
+    font-size: 16px;
+    color: #131118;
+   /*  margin: 30px 20px 20px 20px; */
+   text-align: left;
+   
+}
+
+.signup {
+    text-decoration: none;
+    color: #d9776a;
+}
+
+
+.form_container button {
+    padding: 10px;
+    background-color: #d9776a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    /* height: 40px; */
+    width: 100%;
+}
+
+.form_container button:hover {
+    background-color: #d9776a;
+    color: #fff;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.login img {
+    margin-right: 10px;
+}
+
+.arrowback {
+    display: inline-flex;
+    padding-top: 20px;
+}
+
+.arrowback p {
+    font-size: 16px;
+    color: #131118;
+}
+
+.number_boxes {
+    display: flex;
+    gap: 10px; 
+    padding-bottom: 20px;
+  }
+  
+  .box {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(164, 161, 170, 0.2); 
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+ 
+  .box.selected {
+    background-color: #fff; /* Change to desired background */
+    border-color: #131118; /* Dark border for selected boxes */
+    color: #000; /* Darker number color */
+  }
+  
+
+  @media  (max-width: 768px){
+    .image_section {
+        width: 100%;
+        display: none;
+    }
+    .form_section {
+        width: 100%;
+        padding: 20px;
+    }
+    .form_section p{
+        width: 100%;
+        text-align: left !important;
+    }
+    .form_container {
+        width: 100%;
+    }
+    .form_section h2 {
+        font-size: 24px !important;
+    }
+    
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .form_section {
+        padding: 20px;
+    }
+    .form_container {
+        width: 100%;
+    }
+    .form_section p{
+        width: 100%;
+        text-align: left !important;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .form_container {
+        width: 100%;
+    }
+    .form_section p{
+        width: 100%;
+        text-align: left !important;
+    }
+  }
+  
+  /* @media (min-width: 1279px) and (max-width: 1440px) {
+  } */

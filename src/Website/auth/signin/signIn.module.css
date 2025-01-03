@@ -1,0 +1,210 @@
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login_container {
+    width: 75%;
+    height: 85%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image_section {
+    width: 46%;
+    height: 100%;
+}
+
+.image_section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+}
+
+.form_section h2 {
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    color: #131118;
+}
+
+.form_section p {
+    font-size: 14px;
+    color: #65635F;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #131118;
+}
+
+.form_container input {
+    padding-left: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #807D7E;
+    border: 1px solid #00000033;
+    height: 42px;
+    width: 382px;
+    box-sizing: border-box;
+}
+
+.newuser {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #131118;
+    justify-content: center;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: #131118;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.form_container button {
+    padding: 10px;
+    background-color: #FF682180;
+    text-transform: uppercase;
+    color: #131118;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    height: 42px;
+    width: 382px;
+}
+
+.form_container button:hover {
+    background-color: #d9776a;
+    color: #fff;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    position: absolute;
+    top: 11%;
+    right: 15%;
+}
+
+@media (max-width: 768px) {
+    .login_container {
+        width: 86%;
+        height: auto;
+    }
+
+    .image_section {
+        width: 100%;
+        display: none;
+    }
+
+    .form_section {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .form_section p{
+        margin: 14px 30px;
+    }
+
+    .form_container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form_section h2 {
+        font-size: 24px;
+    }
+
+    .form_container input {
+        width: 100%;
+    }
+
+    .form_container button {
+        width: 100%;
+    }
+
+    .closeButton {
+        top: 12%;
+        right: 8%;
+    }
+    .closeButton svg{
+        height: 26px;
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .form_container {
+        width: 86%;
+    }
+    .form_container input {
+        width: 100%;
+    }
+    .form_container button {
+        width: 100%;
+    }
+    .form_section {
+        padding: 40px 0px;
+    }
+    .login_container {
+        height: 80%;
+        width: 86%;
+    }
+    .closeButton {
+        top: 12%;
+    }
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .form_section p {
+        width: 100%;
+        text-align: center !important;
+    }
+
+}
+
+@media (min-width: 1279px) and (max-width: 1440px) {}
