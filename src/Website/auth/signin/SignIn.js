@@ -18,7 +18,6 @@ const SignIn = ({ isOpen, onClose }) => {
                                 <path d="M23.6841 8.31641L8.31633 23.6842" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" />
                                 <path d="M23.6833 23.6855L8.3156 8.3178" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" />
                             </svg>
-
                         </button>
                         <div >
                             <img src="./assets/logo.png" alt="logo" />

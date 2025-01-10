@@ -1,0 +1,51 @@
+.main{
+    margin: 120px 0px 40px 0px;
+}
+.border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.titlesmain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.titlesmain h2 {
+    font-size: 56px;
+    color: #1E1E1E;
+    margin-top: 20px;
+}
+
+.titlesmain p {
+    font-size: 16px;
+    color: #1E1E1E;
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+@media (max-width: 768px) {
+    .main{
+        margin: 40px 20px 30px 20px;
+    }
+    .titlesmain h2{
+        font-size: 28px;
+        margin-top: 14px;
+    }
+    .titlesmain p{
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+    }
+}
