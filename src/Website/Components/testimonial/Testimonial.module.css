@@ -1,0 +1,229 @@
+.testimonialSlider {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+}
+.testimonialcont{
+  padding-bottom: 180px;
+}
+.quoteContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.text {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.author {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #9c7b55;
+}
+
+.arrow:hover {
+  color: #6b4a2f;
+}
+
+.leftArrow {
+  margin-right: auto;
+}
+
+.rightArrow {
+  margin-left: auto;
+}
+
+.container {
+  width: 100%;
+  padding: 60px;
+  background-color: #EEEEEE;
+  position: relative;
+}
+
+.container h4 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 66px;
+  font-weight: 600;
+  line-height: 81px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #090909;
+  padding-bottom: 25px;
+}
+
+.maincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  gap: 12%;
+}
+
+.content {
+  width: 40%;
+  text-align: center;
+  min-width: 540px;
+}
+
+.content p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #2b2b2b;
+}
+
+.content svg {
+  width: 35px;
+}
+
+.centered {
+  position: relative;
+  top: 96px;
+  left: 15%;
+  width: 71%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftcomma {
+  position: relative;
+  top: 40px;
+  right: 55%;
+}
+.rightcomma {
+  position: relative;
+  top: -36px;
+  left: 55%;
+}
+
+
+@media (max-width: 1060px) {
+  .content p {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .container h2 {
+    font-size: 36px;
+  }
+
+  .maincontainer {
+    width: 100%;
+    gap: 5%;
+  }
+
+  .container {
+    padding: 50px 32px;
+  }
+
+  .centered {
+    left: 10%;
+    width: 80%;
+  }
+
+  .centered svg {
+    width: 50px;
+  }
+  .leftcomma {
+    display: none;
+  }
+  .rightcomma {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .leftcomma {
+    display: none;
+  }
+  .rightcomma {
+    display: none;
+  }
+  .content {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    min-width: auto;
+  }
+
+  .centered {
+    top: 48px;
+    width: 92%;
+    left: 4%;
+  }
+
+  .centered svg {
+    width: 16px;
+  }
+
+  .container {
+    padding: 35px 28px;
+  }
+
+  .content p {
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .author {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .role {
+    font-size: 10px;
+    line-height: normal;
+  }
+
+  .container h4 {
+    display: none;
+  }
+}
+
+@media (min-width: 1279px) and (max-width: 1440px) {
+  .content p {
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 12px;
+  }
+
+  .container h2 {
+    font-size: 50px;
+    line-height: 62px;
+  }
+}

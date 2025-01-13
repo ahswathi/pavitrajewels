@@ -1,27 +1,38 @@
 import React, { useState } from 'react';
-import SignIn from '../../auth/signin/SignIn';
-import Otp from '../../auth/otp/Otp';
-import CreateAccount from '../../auth/createAccount/CreateAccount';
-import { Success } from '../../auth/success/Success';
+import styles from "./home.module.css"
+/* import Sparkle from '../../components/Sparkle/Sparkle'; */
+/* import AddSliders from '../../components/Addsliders/AddSliders';
+import Aboutuscom from '../../components/Aboutuscon/Aboutuscom'; */
+import { Border } from '../../components/maincomps/border/Border'
+import Testimonial from '../../components/testimonial/Testimonial';
+import Featured from '../../components/Featured/Featured';
+import PopularCat from './popularCat/PopularCat';
 
 const Home = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
-  // Handlers for opening and closing the popup
-  const openPopup = () => setIsPopupOpen(true);
-  const closePopup = () => setIsPopupOpen(false);
   return (
-    <div>
-      <h1>Welcome to the Login Page</h1>
-   {/*    <button onClick={openPopup}>Sign In</button>
-      <button onClick={openPopup}>Otp</button>  */}
-      <button onClick={openPopup}>CreateAccount</button> 
-      
-      {/* SignIn Popup */}
-      {/* <SignIn isOpen={isPopupOpen} onClose={closePopup} />
-      <Otp isOpen={isPopupOpen} onClose={closePopup} /> */}
-      <Success isOpen={isPopupOpen} onClose={closePopup} />
-    </div>
+    <>
+      <div className={styles.container}>
+        <div className={styles.section}>
+          <div className={styles.box}>
+            <h2 className={styles.heading}>Discover Your</h2>
+            <h2 className={styles.subheading}>Heirloom Jewels</h2>
+            {/* <p className={styles.text}>Discover the timeless beauty of handcrafted jewelry</p> */}
+            <button className={styles.btn1}>Shop Now</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <PopularCat/>
+      {/*  <Border title='Popular categories' subtitle='Find all the trending category' /> */}
+
+     <Testimonial/>
+     {/*  <Aboutuscom />
+      <AddSliders />
+      <Featured />
+      <Sparkle /> */}
+    </>
   )
 }
 

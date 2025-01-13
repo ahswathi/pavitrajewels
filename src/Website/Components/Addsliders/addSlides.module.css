@@ -1,0 +1,122 @@
+.container{
+    width: 100%;
+    
+
+    background-color:#F5B884;
+    margin-top: 7rem;
+}
+
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+/* .brands img{
+    width: 90px;
+    height: auto;
+} */
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px 20px 0px;
+    }
+    
+    .slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    }
+    
+    .slidetrack {
+    display: flex;
+      -webkit-animation: scroll 25s linear infinite;
+    animation: scroll 25s linear infinite;
+    width: calc(350px * 46);
+      gap: 20px;
+      align-items: center;
+    }
+
+    .slide img {
+        width: 100%;
+      height: auto;
+      }
+      .logotext{
+        font-family: Old Standard TT;
+font-size: 42px;
+font-weight: 400;
+line-height: 51.91px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+      }
+
+    @-webkit-keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-350px * 4));
+        }
+        }
+        
+        @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-350px * 4));
+        }
+        }
+        
+/* @media (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    .container h2{
+        font-size: 26px;
+    }
+    .slide img{
+        width: 48px !important;
+    }
+} */
+@media (max-width: 768px) {
+    .slidetrack {
+      gap: 20px;
+    }
+    .hide{
+        display: none;
+        visibility: none;
+    }
+    .container h2{
+        padding: 1px 8px;
+        font-size: 24px !important;
+        line-height: 38px !important;
+    }
+    .container {
+        padding: 20px  0px;
+    }
+    .slide img{
+        width: 90% !important;
+    }
+    .container{
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .wrapper{
+      padding: 0px 0px 0px 0px;
+    }
+    .logotext{
+        font-family: Old Standard TT;
+font-size: 32px;
+font-weight: 400;
+line-height: 51.91px;
+text-align: left;
+
+      }
+}

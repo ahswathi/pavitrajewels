@@ -1,0 +1,254 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.containerflower{
+    margin-top: 1rem;
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    flex-direction: column;
+}
+.line1{
+    width: 243px;
+    height: 3px;
+    border: none;
+    background: rgb(214,143,174);
+    background: linear-gradient(68deg, rgba(214,143,174,0) 9%, rgba(135,133,133,1) 62%);
+}
+.line2{
+    width: 243px;
+    height: 3px;
+    border: none;
+    background: rgb(0,0,0);
+    background: linear-gradient(68deg, #000000af 3%, rgba(135,133,133,0) 100%);
+}
+.flower{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.font1{
+    font-family: Old Standard TT;
+font-size: 56px;
+font-weight: 400;
+line-height: 69.22px;
+text-align: center;
+color: #1E1E1E;
+margin-top: 1rem;
+
+}
+.font2{
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.7px;
+    text-align: center;
+  
+color: #1E1E1E;
+margin-top: 1rem;
+margin-bottom: 2rem;
+
+}
+.sectioncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+    width: 100%;
+  }
+  
+  .grid {
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+ 
+ 
+  }
+  
+  .item {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image {
+    width: 100%;
+
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .prices{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  .name{
+    margin:0px;
+    font-family: Karla;
+font-size: 16px;
+font-weight: 400;
+line-height: 18.7px;
+text-align: left;
+margin-top: 10px;
+  }
+  .finalprice{
+    font-family: Karla;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.04px;
+text-align: left;
+margin: 0px;
+  }
+  .actualprice{
+    font-family: Karla;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.04px;
+text-align: left;
+text-decoration-line: line-through;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin: 0px;
+color: #00000099;
+
+  }
+  .seeMoreButton{
+    margin-top: 3rem;
+    padding: 15px 40px;
+    font-family: Old Standard TT;
+font-size: 16px;
+font-weight: 700;
+line-height: 19.78px;
+background-color: rgb(255, 255, 255);
+border: 1px solid #000000;
+cursor: pointer;
+
+
+  }
+  @media (max-width: 1336px) {
+    .image {
+        width: 244px;
+    
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  }
+  @media (max-width: 1156px) {
+    .image {
+        width: 204px;
+    
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  }
+  @media (max-width: 490px) {
+    .image {
+        width: 154px;
+    
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .name{
+        margin:0px;
+        font-family: Karla;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.7px;
+    text-align: left;
+    margin-top: 10px;
+    width: 160px;
+      }
+      .finalprice{
+        font-family: Karla;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.04px;
+    text-align: left;
+    margin: 0px;
+      }
+      .actualprice{
+        font-family: Karla;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.04px;
+    text-align: left;
+    text-decoration-line: line-through;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0px;
+    color: #00000099;
+    
+      }
+      .grid {
+        width: 95%;
+      }
+        
+      
+  }
+  @media (max-width: 359px) {
+    .image {
+        width: 134px;
+    
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .name{
+        margin:0px;
+        font-family: Karla;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.7px;
+    text-align: left;
+    margin-top: 10px;
+    width: 120px;
+      }
+  }
+@media (max-width: 736px) {
+  
+    .line1{
+        width: 143px;
+        
+    }
+    .line2{
+        width: 143px;
+    }
+    .font1{
+        font-size: 28px;
+        line-height: 29.22px;
+    }
+    .font2{
+        font-size: 12px;
+        line-height: 10.7px;
+    
+    }
+    }
+    @media (max-width: 370px) {
+        .line1{
+            width: 113px;
+            height: 2px;
+        }
+        .line2{
+            width: 113px;
+            height: 2px;
+        }
+    }

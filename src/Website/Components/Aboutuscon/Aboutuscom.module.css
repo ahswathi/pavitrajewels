@@ -1,0 +1,225 @@
+.container{
+
+    justify-content: center;
+ gap: 40px;
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+}
+.left{
+    width: 35%;
+   
+    margin-top: 2rem;
+}
+.right{
+    width: 50%; 
+    justify-content: right; 
+    align-items: flex-end;
+    display: flex;
+  
+}
+.heading{
+    font-family: Karla;
+font-size: 17px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0.25px;
+text-align: left;
+
+
+}
+.subheding{
+    font-family: Amiri;
+font-size: 48px;
+font-weight: 400;
+line-height: 57.6px;
+text-align: left;
+width: 493px;
+margin-top: -0.2rem;
+margin-bottom: 1rem;
+
+
+}
+.head{
+    font-family: Karla;
+font-size: 17px;
+font-weight: 400;
+line-height: 25.5px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #00000099;
+width: 415.04px;
+}
+.mainImg_1{
+ margin-top: 29rem;
+ margin-right: 39rem;
+}
+.box{
+    height: 671px;
+    width:90%;  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #f6f5f5;
+    background-image: url(Rectangl.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Positions the image to overflow on the left */
+}
+.btn1{
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-family: Old Standard TT;
+font-size: 16px;
+font-weight: 700;
+margin-top: 1rem;
+
+}
+@media (max-width: 1176px) {
+    .mainImg_1{
+        margin-top: 29rem;
+        margin-right: 25rem;
+       }
+}
+@media (max-width: 1024px) {
+    .container{
+
+        justify-content: center;
+        align-items: center;
+     gap: 40px;
+        display: flex;
+        width: 100%;
+        margin-top: 0rem;
+        flex-direction: column;
+    }
+    .left{
+        width: 50%;
+        margin-top: 2rem;
+    }
+    .right{
+        width: 90%; 
+        justify-content: center; 
+        align-items: center;
+        display: flex;
+      
+    }
+    .box{
+        height: 368px;
+        width:50%;  
+        background-image: url(Rengle.png);
+    }
+    .mainImg_1{
+        margin-top: 20rem;
+        margin-right: 25rem;
+        width: 126px;
+height: 117px;
+       }
+}
+@media (max-width: 850px) {
+    .left{
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .right{
+        width: 70%; 
+        justify-content: center; 
+        align-items: center;
+        display: flex;
+      
+    }
+    .box{
+        height: 368px;
+        width:80%;  
+        background-image: url(Rengle.png);
+    }
+
+    
+}
+@media (max-width: 690px) {
+   
+    .box{
+        height: 368px;
+        width:80%;  
+        background-image: url(Rengle.png);
+    
+    }
+    .right{
+        width: 90%; 
+        justify-content: right; 
+        align-items: flex-end;
+        display: flex;
+      
+      
+    }
+    .mainImg_1{
+        margin-top: 20rem;
+        margin-right: 28rem;
+        width: 126px;
+height: 117px;
+       }
+       .heading{
+        font-family: Karla;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    
+    
+    }
+    .subheding{
+    font-size: 28px;
+    line-height: 34px;
+    width: 100%;
+    
+    
+    }
+    .head{
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    }
+
+}
+@media (max-width: 536px) {
+    .mainImg_1{
+        margin-top: 20rem;
+        margin-right: 20rem;
+        width: 126px;
+height: 117px;
+       }
+}
+@media (max-width: 426px) {
+    .left{
+        width: 80%;
+        margin-top: 0rem;
+    }
+}
+@media (max-width: 398px) {
+    .box{
+        height: 268px;
+        width:80%;  
+        background-image: url(Rengle.png);
+    
+    }
+    .mainImg_1{
+        margin-top: 12rem;
+        margin-right: 14rem;
+        width: 126px;
+height: 117px;
+       }
+}
+@media (max-width: 322px) {
+    .mainImg_1{
+        margin-top: 12rem;
+        margin-right: 13rem;
+        width: 126px;
+height: 117px;
+       }
+}
