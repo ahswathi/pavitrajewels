@@ -1,41 +1,61 @@
-.login_container {
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login_container {
+    width: 75%;
+    height: 85%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .image_section {
-    text-align: center;
-    width: 56%
+    width: 46%;
+    height: 100%;
 }
 
 .image_section img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
 }
 
 .form_section {
-    padding: 60px;
     display: flex;
     flex-direction: column;
-  /*   align-items: center; */
+    align-items: center;
     justify-content: center;
-    width: 38%
+    width: 54%;
 }
 
-
-
 .form_section h2 {
-    font-size: 30px;
+    font-size: 38px;
+    font-weight: 400;
     margin-bottom: 0px;
     color: #131118;
 }
 
 .form_section p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 40px;
-    width: 70%;
-    text-align: left !important;
+    font-size: 14px;
+    color: #65635F;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+
+.form_section span {
+    font-size: 14px;
+    color: #131118;
 }
 
 form {
@@ -43,38 +63,55 @@ form {
     flex-direction: column;
 }
 
-.form_container  label {
-    font-size: 12px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #6C7275;
+.form_container label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #131118;
 }
 
 .form_container input {
-    padding-left: 8px;
+    padding-left: 18px;
     margin-top: 10px;
     margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    height: 40px;
-}
-
-.form_container {
-    width: 60%;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #807D7E;
+    border: 1px solid #00000033;
+    height: 42px;
+    width: 382px;
+    box-sizing: border-box;
 }
 
 .newuser {
+    display: flex;
+    align-items: center;
     text-align: center;
     font-size: 14px;
     color: #131118;
+    justify-content: center;
 }
+
+.form_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form_container span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #F92929;
+}
+
 
 .newuser p {
     font-size: 16px;
     color: #131118;
-   /*  margin: 30px 20px 20px 20px; */
-   text-align: left;
-   
+    line-height: 26px;
+    /*  margin: 30px 20px 20px 20px; */
+    text-align: left;
+
 }
 
 .signup {
@@ -85,19 +122,20 @@ form {
 
 .form_container button {
     padding: 10px;
-    background-color: #d9776a;
-    color: #fff;
+    background-color: #FF682180;
+    text-transform: uppercase;
+    color: #131118;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
-    /* height: 40px; */
-    width: 100%;
+    font-size: 12px;
+    height: 42px;
+    width: 382px;
 }
 
 .form_container button:hover {
-    background-color: #d9776a;
-    color: #fff;
+    background-color: #FF682180;
+    color: #131118;
 }
 
 .login {
@@ -106,7 +144,7 @@ form {
     justify-content: center;
     padding: 10px;
     background-color: white;
-    color: black;
+    color: #131118;
     border: 1px solid #ccc;
     margin-top: 10px;
     width: 100%;
@@ -117,8 +155,20 @@ form {
 }
 
 .arrowback {
-    display: inline-flex;
-    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 11%;
+    right: 45%;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 11%;
+    right: 15%;
 }
 
 .arrowback p {
@@ -128,75 +178,178 @@ form {
 
 .number_boxes {
     display: flex;
-    gap: 10px; 
+    gap: 20px;
     padding-bottom: 20px;
-  }
-  
-  .box {
-    width: 40px;
-    height: 40px;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(164, 161, 170, 0.2); 
+    border: 1px solid rgba(164, 161, 170, 0.2);
     border-radius: 6px;
     font-size: 18px;
     font-weight: bold;
     color: #000;
-  }
-  
- 
-  .box.selected {
-    background-color: #fff; /* Change to desired background */
-    border-color: #131118; /* Dark border for selected boxes */
-    color: #000; /* Darker number color */
-  }
-  
+    box-sizing: border-box;
+}
 
-  @media  (max-width: 768px){
+
+.box.selected {
+    background-color: #fff;
+    /* Change to desired background */
+    border-color: #131118;
+    /* Dark border for selected boxes */
+    color: #000;
+    /* Darker number color */
+}
+
+
+
+@media (max-width: 768px) {
+    .login_container {
+        width: 86%;
+        height: auto;
+    }
+
     .image_section {
         width: 100%;
         display: none;
     }
+
     .form_section {
         width: 100%;
-        padding: 20px;
+        padding: 40px 20px;
+        box-sizing: border-box;
     }
-    .form_section p{
-        width: 100%;
-        text-align: left !important;
+
+    .form_section p {
+        margin: 14px 30px;
     }
+
     .form_container {
         width: 100%;
+        margin-top: 20px;
     }
+
     .form_section h2 {
-        font-size: 24px !important;
+        font-size: 24px;
     }
-    
-  }
-  
-  @media (min-width: 768px) and (max-width: 1023px) {
+
+    .form_section p {
+        font-size: 12px;
+        line-height: 22px;
+        margin: 0px 0px;
+        text-align: center;
+    }
+
+    .form_section span {
+        font-size: 12px;
+    }
+
+    .form_container input {
+        width: 100%;
+    }
+
+    .form_container button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .closeButton {
+        top: 16%;
+        right: 8%;
+    }
+
+    .closeButton svg {
+        height: 26px;
+    }
+
+    .box {
+        width: 40px;
+        height: 40px;
+    }
+
+    .newuser {
+        margin-bottom: 10px;
+    }
+
+    .number_boxes {
+        gap: 16px;
+    }
+
+    .arrowback {
+        top: 17%;
+        left: 10%;
+    }
+
+    .arrowback svg{
+        height: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .form_container {
+        width: 86%;
+    }
+
+    .form_container input {
+        width: 100%;
+    }
+
+    .form_container button {
+        width: 100%;
+    }
+
     .form_section {
-        padding: 20px;
+        padding: 40px 0px;
     }
+
+    .login_container {
+        height: 80%;
+        width: 86%;
+    }
+
+    .closeButton {
+        top: 12%;
+    right: 8%;
+    }
+    .arrowback {
+        top: 13%;
+        left: 50%;
+    }
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .form_section p {
+        width: 100%;
+        text-align: center !important;
+    }
+
+}
+
+@media (min-width: 1279px) and (max-width: 1440px) {
     .form_container {
+        width: 86%;
+    }
+
+    .form_container input {
         width: 100%;
     }
-    .form_section p{
-        width: 100%;
-        text-align: left !important;
-    }
-  }
-  
-  @media (min-width: 1024px) and (max-width: 1440px) {
-    .form_container {
+
+    .form_container button {
         width: 100%;
     }
-    .form_section p{
-        width: 100%;
-        text-align: left !important;
+
+    .form_section {
+        padding: 40px 0px;
     }
-  }
-  
-  /* @media (min-width: 1279px) and (max-width: 1440px) {
-  } */
+
+    
+
+}

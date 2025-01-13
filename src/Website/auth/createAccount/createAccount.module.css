@@ -1,40 +1,56 @@
-.login_container {
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login_container {
+    width: 75%;
+    height: 85%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .image_section {
-    text-align: center;
-    width: 56%
+    width: 46%;
+    height: 100%;
 }
 
 .image_section img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
 }
 
 .form_section {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 48%
+    width: 54%;
+    /* height: 80vh; */
 }
 
-
-
 .form_section h2 {
-    font-size: 30px;
+    font-size: 38px;
+    font-weight: 400;
     margin-bottom: 0px;
     color: #131118;
 }
 
 .form_section p {
-    font-size: 16px;
-    color: #666;
+    font-size: 14px;
+    color: #65635F;
     margin-bottom: 40px;
-    text-align: center;
 }
 
 form {
@@ -42,109 +58,57 @@ form {
     flex-direction: column;
 }
 
-.form_container  label {
-    font-size: 12px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #6C7275;
+.form_container label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #131118;
 }
 
 .form_container input {
-    padding-left: 8px;
+    padding-left: 18px;
     margin-top: 10px;
     margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    height: 40px;
-}
-.form_container {
-    width: 60%;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #807D7E;
+    border: 1px solid #00000033;
+    height: 42px;
+    width: 382px;
+    box-sizing: border-box;
 }
 
 .newuser {
-    text-align: center;
-    font-size: 14px;
-    color: #131118;
-}
-.newuser p {
-    font-size: 16px;
-    color: #131118;
-    margin: 30px 20px 20px 20px;
-}
-.signup{
-    text-decoration: none;
-    color: #d9776a;
-}
-.terms {
-    font-size: 14px;
-    color: #131118;
-    height: 40px !important;
-    line-height: 28px;
-}
-.terms span {
-    font-size: 16px;
-    color: #666;
-   /*  margin: 30px 20px 20px 20px; */
-}
-.terms_cond{
-    text-decoration: none;
-    color: #d9776a;
-}
-.terms_main{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.checkbox{
-    width: 20px;
-    height: 20px;
-}
-.terms_main input[type="checkbox"]:not(:checked){
-    content: "";
-    background-color: #d87f6b; /* Default unchecked color */
-  }
-.terms_main input[type="checkbox"]:checked {
-    content: "✔";
-    background-color: #c25442; /* New background color when checked */
-    color: white; /* Checkmark color */
-    border-color: #c25442; /* Border color for the checked state */
-  }
-.separator {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 0px 60px 20px 60px;
-}
-
-.separator::before,
-.separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #ccc;
-}
-
-.separator::before {
-    margin-right: 10px;
-}
-
-.separator::after {
-    margin-left: 10px;
-}
-
-.separator span {
     font-size: 14px;
-    color: #666;
+    color: #131118;
+    justify-content: center;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: #131118;
+    margin: 20px;
+    text-transform: uppercase;
 }
 
 .form_container button {
     padding: 10px;
-    background-color: #d9776a;
-    color: #fff;
+    background-color: #FF682180;
+    text-transform: uppercase;
+    color: #131118;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
-    /* height: 40px; */
+    font-size: 12px;
+    height: 42px;
+    width: 382px;
 }
 
 .form_container button:hover {
@@ -152,71 +116,96 @@ form {
     color: #fff;
 }
 
-.login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border: 1px solid #ccc;
-    margin-top: 10px;
-    width: 100%;
+.closeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    position: absolute;
+    top: 11%;
+    right: 15%;
 }
 
-.login img {
-    margin-right: 10px;
-}
+@media (max-width: 768px) {
+    .login_container {
+        width: 86%;
+        height: auto;
+    }
 
-
-@media  (max-width: 768px){
     .image_section {
         width: 100%;
         display: none;
     }
+
     .form_section {
         width: 100%;
-        padding: 20px;
+        padding: 40px 20px;
     }
+
     .form_section p{
-        width: 100%;
+        margin: 14px 30px;
     }
+
     .form_container {
         width: 100%;
+        margin-top: 20px;
     }
+
     .form_section h2 {
-        font-size: 24px !important;
+        font-size: 24px;
     }
-    .separator{
-        margin: 0px 20px 20px 20px;
+
+    .form_container input {
+        width: 100%;
     }
-  }
-  
-  @media (min-width: 768px) and (max-width: 1023px) {
+
+    .form_container button {
+        width: 100%;
+    }
+
+    .closeButton {
+        top: 12%;
+        right: 8%;
+    }
+    .closeButton svg{
+        height: 26px;
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
     .form_container {
         width: 86%;
     }
-    .form_section p{
+    .form_container input {
         width: 100%;
-        text-align: center !important;
     }
-    .separator{
-        margin: 0px 20px 20px 20px;
+    .form_container button {
+        width: 100%;
     }
-  }
-  
-  @media (min-width: 1024px) and (max-width: 1440px) {
-    .form_container {
+    .form_section {
+        padding: 40px 0px;
+    }
+    .login_container {
+        height: 80%;
         width: 86%;
     }
-    .form_section p{
+    .closeButton {
+        top: 12%;
+    }
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .form_section p {
         width: 100%;
         text-align: center !important;
     }
-    .separator{
-        margin: 0px 20px 20px 20px;
-    }
-  }
-  
-  /* @media (min-width: 1279px) and (max-width: 1440px) {
-  } */
+
+}
+
+@media (min-width: 1279px) and (max-width: 1440px) {}

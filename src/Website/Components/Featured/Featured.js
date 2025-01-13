@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from "./featured.module.css";
+import { Border } from '../maincomps/border/Border';
 
 const Featured = () => {
   const [visibleItems, setVisibleItems] = useState(8); // Number of initially visible items
@@ -85,13 +86,7 @@ const Featured = () => {
   return (
     <div className={styles.container}>
       <div className={styles.containerflower}>
-        <div className={styles.flower}>
-          <hr className={styles.line1} />
-          <img src="/assets/flower.svg" alt="Logo" className={styles.mainImg_1} />
-          <hr className={styles.line2} />
-        </div>
-        <span className={styles.font1}>Featured Products</span>
-        <span className={styles.font2}>Find all the jewellery you will need here.</span>
+         <Border title='Featured Products' subtitle='Find all the trending category' />
       </div>
       <div className={styles.sectioncontainer}>
         <div className={styles.grid}>
