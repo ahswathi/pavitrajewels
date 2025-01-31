@@ -1,0 +1,36 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding: 16px 4%;
+  background-color: #FEF5EB;
+  text-transform: capitalize;
+  font-family: 'Amiri', serif;
+}
+
+.homeLink {
+  text-decoration: none;
+  color: #7E7E7E;
+  margin-left: 40px;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  gap: 10px;
+  margin-top: 3px;
+}
+
+.breadcrumbLink {
+  text-decoration: none;
+  color: #C86550;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .homeLink {
+
+    margin-left: 10px;
+  }
+}

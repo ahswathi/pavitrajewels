@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5B884;
+    padding: 30px 80px;
+    box-sizing: border-box;
+    width: 100;
+}
+.counterCol{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width:25%;
+}
+.counterCol h5{
+    font-size: 80px;
+    font-family: 'Amiri', serif;
+}
+.counterCol span{
+    font-size: 40px;
+    margin-left: -18px;
+}
+.counterCol p{
+    font-size: 20px;
+}

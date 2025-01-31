@@ -2,6 +2,8 @@
     display: flex;
     gap: 16px;
     margin: 30px 6%;
+    z-index: 999;
+    position: relative;
 }
 
 .col {
@@ -98,7 +100,7 @@
     }
     .gallery {
         gap: 8px;
-        margin: 30px 6%;
+        margin: 30px 2%;
     }
 
     .col {

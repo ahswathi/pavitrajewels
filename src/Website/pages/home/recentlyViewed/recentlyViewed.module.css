@@ -1,0 +1,116 @@
+.sliderContainer {
+    text-align: left;
+    margin: 140px 0px;
+    padding-left: 6%;
+    z-index: 999;
+    position: relative;
+}
+
+.sliderheading {
+    width: 26%;
+}
+
+.slidermain {
+    display: flex;
+    gap: 40px;
+}
+
+.sliderCards {
+    display: flex;
+    gap: 20px;
+    width: 70%;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 40px;
+    color: #1E1E1E;
+    margin-top: 20px;
+}
+
+.slickSlider {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1000px;
+}
+
+.productCard {
+    text-align: center;
+    width: 280px;
+    margin-right: 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.productCard img {
+    width: 280px;
+    height: auto;
+    object-fit: cover;
+}
+.productCard {
+    outline: none; /* Disables the default focus outline */
+}
+
+.productCard:focus {
+    outline: none; /* Ensures no outline appears when the element is focused */
+}
+.productName {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 0.9rem;
+}
+
+.currentPrice {
+    font-weight: bold;
+    color: #000;
+}
+
+.originalPrice {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 0.5rem;
+}
+
+/* Custom Arrow Styling */
+.customArrow {
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 2rem;
+    color: #4d1f08;
+    cursor: pointer;
+}
+
+.leftArrow {
+    left: -370px;
+}
+
+.rightArrow {
+    left: -320px;
+}
+
+/* Override slick dots */
+.slick-dots li button:before {
+    color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #555;
+}
+
+

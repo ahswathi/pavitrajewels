@@ -2,6 +2,8 @@ import React from 'react'
 import { Grid, Card, CardMedia, CardContent, Typography, Chip, Box } from '@mui/material';
 import Sorting from '../../components/prodcomps/sorting/Sorting';
 import Filter from '../../components/prodcomps/filterbar/Filter';
+import SimilarProducts from '../../components/SimilarProducts/SimilarProducts';
+
 
 const products = [
   {
@@ -154,6 +156,8 @@ const Product = () => {
           ))}
         </Grid>
       </Box>
+
+      
     </div>
   )
 }

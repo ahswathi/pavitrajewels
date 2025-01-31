@@ -1,0 +1,331 @@
+.welcomeMain {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8FAFC;
+    align-items: center;
+}
+
+.welocmeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 40px;
+    background-color: #fff;
+    padding: 30px;
+    gap: 26px;
+    border-top: 2px solid #FE671F;
+    width: 40%;
+}
+
+.welocmeContent img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.welocmeContent2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 40px;
+    background-color: #fff;
+    padding: 30px;
+    gap: 26px;
+    width: 40%;
+}
+
+
+.welocmeHead {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.welocmePara {
+    display: flex;
+    flex-direction: column;
+    color: #384860;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.welocmeEnquire {
+    margin: 20px 50px;
+    color: #384860;
+    font-size: 14px;
+    line-height: 24px;
+    width: 40%;
+}
+
+.welocmeEnquire span {
+    text-decoration: underline;
+}
+
+.trackOrderBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trackOrderBtn {
+    background-color: #FE671F;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.trackOrderBtn:hover {
+    background-color: #fff;
+    border: 1px solid #FE671F;
+    color: #FE671F;
+    transform: scale(1.1);
+}
+
+.thankuHeadh3 {
+    color: #121A26;
+    font-weight: 700;
+}
+
+.thankuHeadp {
+    color: #384860;
+
+}
+
+.thankuOrderContainer {}
+
+.thankuorderTitle {
+    font-size: 18px;
+    color: #94A3B8;
+    margin: 0px;
+
+}
+
+.thankuproduct {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    gap: 20px
+}
+
+.thankuproductImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.hline {
+    border: none;
+    border-top: 1px solid #D1D1D8;
+    width: 100%;
+    margin: 0px auto;
+    opacity: 0.7;
+}
+.thankuproductDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.thankuproductName {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+    color: #384860;
+}
+
+.thankuproductPrice {
+    font-size: 16px;
+    color: #333;
+    margin: 0px;
+}
+
+.thankuproductInfo {
+    font-size: 14px;
+    color: #777;
+    margin: 0px;
+}
+
+.paymentdatalist {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.paymentdata {
+    display: flex;
+    justify-content: space-between;
+    color: #384860;
+}
+
+.paymentTotal {
+    display: flex;
+    justify-content: space-between;
+    color: #384860;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .welcomeMain {
+        display: flex;
+        flex-direction: column;
+        background-color: #F8FAFC;
+    }
+
+    .welocmeContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 40px;
+        background-color: #fff;
+        padding: 30px;
+        gap: 26px;
+        border-top: 2px solid #FE671F;
+    }
+
+    .welocmeContent2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 40px;
+        background-color: #fff;
+        padding: 30px;
+        gap: 26px;
+    }
+
+
+    .welocmeHead {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .welocmePara {
+        display: flex;
+        flex-direction: column;
+        color: #384860;
+        font-size: 14px;
+        text-align: center;
+
+    }
+
+    .welocmeEnquire {
+        margin: 20px 50px;
+        color: #384860;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .welocmeEnquire span {
+        text-decoration: underline;
+    }
+
+    .trackOrderBtn {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .trackOrderBtn {
+        background-color: #FE671F;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .trackOrderBtn:hover {
+        background-color: #fff;
+        border: 1px solid #FE671F;
+        color: #FE671F;
+        transform: scale(1.1);
+    }
+
+    .thankuHeadh3 {
+        color: #121A26;
+        font-weight: 700;
+    }
+
+    .thankuHeadp {
+        color: #384860;
+
+    }
+
+    .thankuOrderContainer {}
+
+    .thankuorderTitle {
+        font-size: 18px;
+        color: #94A3B8;
+        margin: 0px;
+
+    }
+
+    .thankuproduct {
+        display: flex;
+        align-items: center;
+        margin: 20px 0px;
+        gap: 20px
+    }
+
+    .thankuproductImage {
+        /* width: 80px;
+        height: 80px;
+        object-fit: cover;
+        margin-right: 15px; */
+    }
+
+    .thankuproductDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .thankuproductName {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0px;
+        color: #384860;
+    }
+
+    .thankuproductPrice {
+        font-size: 16px;
+        color: #333;
+        margin: 0px;
+    }
+
+    .thankuproductInfo {
+        font-size: 14px;
+        color: #777;
+        margin: 0px;
+    }
+
+    .paymentdatalist {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .paymentdata {
+        display: flex;
+        justify-content: space-between;
+        color: #384860;
+    }
+
+    .paymentTotal {
+        display: flex;
+        justify-content: space-between;
+        color: #384860;
+        font-size: 18px;
+        font-weight: 700;
+
+    }
+
+}

@@ -1,0 +1,74 @@
+.container {
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+    position: relative;
+    margin: 140px 6%;
+    z-index: 999;
+}
+
+.left {
+    margin-top: 20px;
+    width: 40%;
+}
+
+.right {
+    width: 60%;
+}
+
+.subheding {
+    font-family: Amiri;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.6px;
+    text-align: left;
+    width: 493px;
+    margin-top: -0.2rem;
+    margin-bottom: 1rem;
+}
+
+.head {
+    font-family: Karla;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.5px;
+    text-align: left;
+    color: #00000099;
+    width: 415.04px;
+    margin-bottom: 1rem;
+}
+
+.heading {
+    font-family: Karla;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.5px;
+    text-align: left;
+    color: #00000099;
+    margin-bottom: 1rem;
+}
+.btn1 {
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.box2 {
+    position: absolute;
+    bottom: 40px;
+    left: 26%;
+    bottom: -40px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+.box2 img {
+    width: 100%;
+    height: auto;
+}

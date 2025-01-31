@@ -100,7 +100,8 @@ const Filter = () => {
             boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
             p: 2,
             minWidth: "300px",
-            padding: '10px 16px'
+            padding: '10px 16px',
+            top:"278px",
           },
         }}
       >

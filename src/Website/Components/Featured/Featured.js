@@ -85,9 +85,7 @@ const Featured = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.containerflower}>
-         <Border title='Featured Products' subtitle='Find all the trending category' />
-      </div>
+      {/* <Border title='Featured Products' subtitle='Find all the trending category' /> */}
       <div className={styles.sectioncontainer}>
         <div className={styles.grid}>
           {items.slice(0, visibleItems).map((item, index) => (

@@ -1,0 +1,176 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+/* Background with blur */
+.blur_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px); /* Blur the background */
+  background: rgba(0, 0, 0, 0.4); /* Optional: dark overlay for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup card styling */
+.popup_card {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width:30%; /* Default width for the card */
+
+}
+
+/* Close button */
+.close_btn {
+ /*  position: absolute;
+  top: 10px;
+  right: 10px; */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.couponInput {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.checkButton {
+  padding: 8px 16px;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkButton:hover {
+  background-color: #e68900;
+}
+
+.couponList {
+  margin-bottom: 16px;
+}
+
+.couponItem {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.couponItem:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.couponItem input {
+  margin-top: 4px;
+}
+
+.valid {
+  background-color: #f6fff6;
+  border-color: rgba(0, 255, 0, 0.5);
+}
+
+.expired {
+  background-color: #f5f5f5;
+  opacity: 0.6;
+}
+
+.couponContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.couponCode {
+  font-weight: 600;
+  font-size: 14px;
+}
+.couponsticker {
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px dotted #C2C2C2;
+  background-color: #fff;
+  padding: 4px 6px;
+}
+
+.description {
+  font-size: 12px;
+  color: #666;
+}
+
+.expires {
+  font-size: 12px;
+  color: #ECFDF3;
+}
+
+.expiredText {
+  font-size: 12px;
+  color: #f44336;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.savings {
+  font-weight: 600;
+}
+
+.applyButton {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.applyButton:disabled {
+  background-color: #000;
+  color: #aaa;
+  cursor: not-allowed;
+}

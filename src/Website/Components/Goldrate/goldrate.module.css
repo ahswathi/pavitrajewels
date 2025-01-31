@@ -1,0 +1,99 @@
+/* Background with blur */
+.blur_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px); /* Blur the background */
+  background: rgba(0, 0, 0, 0.4); /* Optional: dark overlay for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup card styling */
+.popup_card {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width:30%; /* Default width for the card */
+  padding: 30px ;
+}
+
+.popup_card h2{
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.popup_card p{
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+/* Close button */
+.close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.close_btn:hover {
+  color: black;
+}
+
+/* Icon margin */
+/* .icon {
+  margin-bottom: 20px;
+} */
+
+.addMoreItems {
+  padding: 16px;
+}
+
+.more {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  border: 1px solid #00000026;
+  border-radius: 4px;
+  padding: 6px 18px;
+  background-color: #000000;
+}
+
+/* Media Queries */
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .popup_card {
+    width: 90%; /* Make the popup more responsive on mobile */
+    padding: 15px;
+  }
+}
+
+/* For tablet screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .popup_card {
+    width: 400px; /* Slightly larger popup on tablets */
+  }
+}
+
+/* For small desktop screens */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .popup_card {
+    width: 450px; /* Increase popup size for small desktops */
+  }
+}

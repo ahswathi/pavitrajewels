@@ -1,0 +1,350 @@
+.chekoutContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 100px;
+}
+
+.chekoutForm {
+    width: 60%;
+}
+
+.chekoutOrder {
+    width: 36%;
+}
+
+.profileform {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    /*   margin: 4% 10%; */
+}
+
+.profileform p {
+    font-size: '12px';
+    color: #3C4242;
+}
+
+.profilerow {
+    display: flex;
+    gap: 15px;
+}
+
+.profileformGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.profileformGroup label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.profileformGroup input,
+.profileformGroup select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+
+}
+.profileformGroup1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px 0px 0px 5px; 
+}
+
+
+.profileformGroup1 label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    border-radius: 5px 0px 0px 5px; 
+}
+
+.profileformGroup1 input,
+.profileformGroup1 select {
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px; 
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-right: none;
+}
+
+
+.checkboxGroup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkboxGroup input {
+    width: 18px;
+    height: 18px;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cancelButton {
+    background-color: transparent;
+    color: #C86550;
+    border: 1px solid #C86550;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.saveButton {
+    background-color: #C86550;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelButton:hover {
+    background-color: #C86550;
+    color: white;
+}
+
+.saveButton:hover {
+    background-color: #C86550;
+}
+
+.orderSummary {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.profileform h2 {
+    margin: 10px 0px 0px;
+}
+.chekoutPayment{
+    margin-top: 40px;
+}
+.paymentOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 14px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.paymentLabel {
+    font-size: 16px;
+    margin-bottom: 0px !important;
+    margin-left: 4px;
+}
+
+.orderdeets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderdeetsfree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderdeetsfree span {
+    color: #1DC252;
+    font-weight: 700;
+}
+
+.hline {
+    border: none;
+    border-top: 1px solid #D1D1D8;
+    width: 100%;
+    margin: 20px auto;
+    opacity: 0.7;
+}
+
+.hline2 {
+    border: none;
+    border-top: 1px solid #D1D1D8;
+    width: 96%;
+    margin: 0px auto;
+    opacity: 0.7;
+}
+
+.chekoutCustminfo span {
+    font-weight: 700;
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+
+.orderSummary {
+    width: 32%;
+    border: 1px solid #ddd;
+    padding: 24px;
+    height: 100%;
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+.Order {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #17183B;
+    margin-bottom: 18px;
+    font-family: 'Amiri', serif;
+}
+
+.summaryItem {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.priceSummary {
+    font-size: 16px;
+    color: #17183B;
+    font-weight: 400;
+}
+
+.coupon {
+    font-size: 16px;
+    color: #FE671F;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.FreeSummary {
+    font-size: 16px;
+    color: #3AA39F;
+    font-weight: 400;
+}
+
+.bold {
+    font-size: 16px;
+    color: #17183B;
+    font-weight: 600;
+}
+
+.summaryTotal {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.checkoutButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.checkoutButton:hover {
+    background-color: #000000;
+}
+.payButton {
+    width: 30%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 14px;
+    margin: 20px 10px;
+}
+
+.payButton:hover {
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 860px) {
+    .profileheader {
+        padding: 20px 20px;
+    }
+
+    .profileform {
+        margin: 4% 0%;
+    }
+
+    .profilerow {
+        flex-direction: column;
+    }
+
+    .profilebodyContainer {
+        border: none;
+    }
+
+    .profilebodyDetails {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .savechanges {
+        width: 100%;
+    }
+
+    .profileform h2 {
+        font-size: 20px;
+    }
+
+    .chekoutContainer {
+        margin: 20px 20px;
+        flex-direction: column;
+    }
+
+    .chekoutForm {
+        width: 100%;
+    }
+
+    .chekoutOrder {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 860px) and (max-width: 1023px) {
+
+    .chekoutContainer {
+        margin: 20px 60px;
+    }
+
+    .chekoutForm {
+        width: 60%;
+    }
+
+    .chekoutOrder {
+        width: 40%;
+    }
+}

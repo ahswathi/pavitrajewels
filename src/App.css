@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -9,8 +9,31 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #FFFBFB;
+  font-family: 'Karla', sans-serif;
+  /* background: radial-gradient(circle, rgba(255, 200, 200, 0.5) 20%, transparent 70%) 10% 10%,
+              radial-gradient(circle, rgba(255, 231, 150, 0.5) 20%, transparent 70%) 80% 20%,
+              radial-gradient(circle, rgba(240, 230, 255, 0.4) 20%, transparent 70%) 20% 80%;
+  background-color: #fffaf2; 
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0; */
 }
 
-p, h1, h2,h3,h4,h5,h6{
+p, h1, h2,h3,h4,h5,h6, ul, li{
   margin: 0px;
 }
+ul{
+  padding-inline-start: 0px;
+}
+
+h2{
+  font-family: 'Amiri', serif;
+
+}
+
+@media (max-width: 768px) {}
+@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 1280px) and (max-width: 1440px) {}
+
+@media (min-width: 1024px) and (max-width: 1279px) {}

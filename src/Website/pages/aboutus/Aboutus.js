@@ -1,10 +1,48 @@
 import React from 'react'
 import styles from "./aboutus.module.css"
 import { Border } from '../../components/maincomps/border/Border'
+import Testimonial from '../../components/testimonial/Testimonial'
+import Counter from '../home/counter/Counter'
 
 const Aboutus = () => {
     return (
         <>
+   <div style={{ position: 'absolute', bottom: '-70%' }}>
+          <img src='/assets/Ellipse1.png' />
+        </div>
+        <div style={{ position: 'absolute', top: '30%', right: '0px', }}>
+          <img src='/assets/Ellipse2.png' />
+        </div>
+        <div style={{ position: 'absolute', bottom: '-220%' }}>
+          <img src='/assets/Ellipse1.png' />
+        </div>
+        <div style={{ position: 'absolute', top: '150%', right: '0px', }}>
+          <img src='/assets/Ellipse2.png' />
+        </div>
+        <div style={{ position: 'absolute', bottom: '-370%' }}>
+          <img src='/assets/Ellipse1.png' />
+        </div>
+        <div style={{ position: 'absolute', top: '300%', right: '0px', }}>
+          <img src='/assets/Ellipse2.png' />
+        </div>
+        <div style={{ position: 'absolute', bottom: '-520%' }}>
+          <img src='/assets/Ellipse1.png' />
+        </div>
+        <div style={{ position: 'absolute', top: '450%', right: '0px', }}>
+          <img src='/assets/Ellipse2.png' />
+        </div>
+        <div style={{ position: 'absolute', bottom: '-670%' }}>
+          <img src='/assets/Ellipse1.png' />
+        </div>
+        <div style={{ position: 'absolute', top: '600%', right: '0px', }}>
+          <img src='/assets/Ellipse2.png' />
+        </div>
+        <div style={{ position: 'absolute', bottom: '-820%' }}>
+          <img src='/assets/Ellipse1.png' />
+        </div>
+        <div style={{ position: 'absolute', top: '750%', right: '0px', }}>
+          <img src='/assets/Ellipse2.png' />
+        </div>
 
             <div className={styles.image_section}>
                 <img src="./assets/aboutus.png" alt="login" />
@@ -26,7 +64,7 @@ const Aboutus = () => {
                     <img src="assets/imgtitle2.png" alt="Jewelry Image 1" />
                     <span>Dummy cotnet </span>
                 </div>
-               {/*  <div className={styles.smcircle}>
+                {/*  <div className={styles.smcircle}>
                     <img src="assets/smcircle.png" alt="Jewelry Image 1" />
                 </div> */}
                 <div className={styles.imgtitle3}>
@@ -37,27 +75,30 @@ const Aboutus = () => {
 
 
             {/*  About us */}
-        {/*     <div className={styles.aboutcontainer}> */}
-                <div className={styles.aboutservice}>
-                    <div className={styles.aboutmainLeft}>
-                        <h6>About us</h6>
-                        <h2>Know us , write a title here on about us</h2>
-                        <p>The timeless beauty of gold meets the captivating allure of precious stones. Each piece in this exquisite collection is a testament to superior craftsmanship and luxurious design, meticulously crafted to adorn you with a touch of opulence.</p>
-                    </div>
-                    <div className={styles.aboutmainRight}>
-                        <img src="./assets/about.png" alt="login" />
-                    </div>
+            {/*     <div className={styles.aboutcontainer}> */}
+            <div className={styles.aboutservice}>
+                <div className={styles.aboutmainLeft}>
+                    <h6>About us</h6>
+                    <h2>Know us , write a title here on about us</h2>
+                    <p>The timeless beauty of gold meets the captivating allure of precious stones. Each piece in this exquisite collection is a testament to superior craftsmanship and luxurious design, meticulously crafted to adorn you with a touch of opulence.</p>
                 </div>
-         {/*    </div> */}
+                <div className={styles.aboutmainRight}>
+                    <img src="./assets/about.png" alt="login" />
+                </div>
+            </div>
+            {/*    </div> */}
+
+            <Counter />
+
 
             {/*  Video */}
             <div className={styles.videoContainer}>
                 <video controls={false}
-                        autoPlay
-                        loop
-                        muted 
-                        height='420px'
-                        className={styles.video}> 
+                    autoPlay
+                    loop
+                    muted
+                    height='420px'
+                    className={styles.video}>
                     <source src="/assets/video.webm" type="video/webm" />
                 </video>
             </div>
@@ -184,16 +225,16 @@ const Aboutus = () => {
                 <div className={styles.col}>
                     <img src="assets/image5.png" alt="Jewelry Image 1" />
                 </div>
-            </div> 
+            </div>
 
-
+<Testimonial/>
 
             <div className={styles.storesection}>
                 <img src="./assets/store.png" alt="login" />
                 <div className={styles.storeimagetitle}>
                     <h2>Kalyan Nagar</h2>
                     <p>Ground Floor Shop Number 1 East Ave Pillar - 391 Near Mulik Palace Kalyani Nagar, bangalore 566064.
-                       <br/> Monday to Sunday 11:00 am - 19:00 pm</p>
+                        <br /> Monday to Sunday 11:00 am - 19:00 pm</p>
                     <p><span>Phone :</span> +91-9876543210</p>
                 </div>
             </div>

@@ -1,0 +1,127 @@
+.welcomeMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welocmeContent {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+    background-color: #fff;
+    padding: 30px;
+    gap: 26px;
+    width: 40%;
+}
+
+.welocmeHead {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.welocmePara {
+    display: flex;
+    flex-direction: column;
+    color: #384860;
+    font-size: 14px;
+
+}
+
+.welocmeEnquire {
+    margin: 20px 50px;
+    color: #384860;
+    font-size: 14px;
+    line-height: 24px;
+    width: 40%;
+}
+
+.welocmeEnquire span {
+    text-decoration: underline;
+}
+
+.trackOrderBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trackOrderBtn {
+    background-color: #FE671F;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.trackOrderBtn:hover {
+    background-color: #fff;
+    border: 1px solid #FE671F;
+    color: #FE671F;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    .welcomeMain {
+        display: flex;
+        flex-direction: column;
+        background-color: #F8FAFC;
+    }
+
+    .welocmeContent {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px;
+        background-color: #fff;
+        padding: 30px;
+        gap: 26px;
+    }
+
+    .welocmeHead {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .welocmePara {
+        display: flex;
+        flex-direction: column;
+        color: #384860;
+        font-size: 14px;
+
+    }
+
+    .welocmeEnquire {
+        margin: 20px 50px;
+        color: #384860;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .welocmeEnquire span {
+        text-decoration: underline;
+    }
+
+    .trackOrderBtn {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .trackOrderBtn {
+        background-color: #FE671F;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .trackOrderBtn:hover {
+        background-color: #fff;
+        border: 1px solid #FE671F;
+        color: #FE671F;
+        transform: scale(1.1);
+    }
+
+}

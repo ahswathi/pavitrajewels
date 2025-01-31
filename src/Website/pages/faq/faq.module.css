@@ -1,0 +1,146 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.content {
+  width: 65%;
+  padding: 20px 20px;
+  padding-left: 30px;
+  background-color: #F7F7FB;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2%;
+}
+
+.faqItem {
+  margin-bottom: 20px;
+
+
+}
+
+.question {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  background-color: #FFFFFF;
+
+  /* margin-top: 2rem; */
+  border-radius: 8px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  /* Bottom shadow effect */
+}
+
+.answer {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #A69E9E;
+  padding: 10px;
+  margin-top: -10px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  /* Bottom shadow effect */
+
+}
+
+.line10 {
+  width: 10px;
+  height: 2px;
+  background-color: palegreen;
+}
+
+.nagative {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  border-radius: 3px;
+}
+
+.positive {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  align-items: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+
+
+  border-radius: 3px;
+}
+
+.mobile_contant {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .content {
+    display: none;
+  }
+
+  .mobile_contant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+
+  }
+
+  .container {
+    margin-top: 1rem;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .content1 {
+    width: 95%;
+  }
+
+  .section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 352px) {
+  .question {
+    font-size: 12px;
+  }
+
+  .answer {
+    font-size: 12px;
+  }
+}
