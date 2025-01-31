@@ -1,4 +1,5 @@
 .sliderContainer {
+    width: 100%;
     margin: 140px 0px 140px 0px;
 }
 
@@ -10,11 +11,14 @@
 
 .imageSlider1 {
     display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
     gap: 20px;
 }
 
 .imageSlider2 {
     display: flex;
+    justify-content: space-between;
     gap: 20px;
     margin-top: -38px;
 }
@@ -22,7 +26,14 @@
 .imageItem1 {
     margin-bottom: 40px;
     position: relative;
+    /* width: 220px;
+    height: 250px; */
 }
+.imageItem1 img{
+    /* width: 220px;
+    height: 250px; */
+}
+
 
 .imageItem2 {
     margin-top: 60px;
@@ -39,23 +50,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.slider-container .slick-prev {
-    display: none !important;
-}
-
-.slider-container .slick-next {
-    display: none !important;
-}
-
-.sliderContainer {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slideItem img {
-    width: 100%;
-    border-radius: 8px;
 }

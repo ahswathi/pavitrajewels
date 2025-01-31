@@ -9,8 +9,8 @@ import RecentlyViewed from './recentlyViewed/RecentlyViewed';
 import SimilarProducts from '../../components/SimilarProducts/SimilarProducts';
 import Sparkle from './Sparkle/Sparkle';
 import Hero from './Hero/Hero';
-import Instafeed from './instafeed/Instafeed';
 import Metrics from './Metrics/Metrics';
+import Instafeed from './instafeed/Instafeed';
 
 
 const Home = () => {
