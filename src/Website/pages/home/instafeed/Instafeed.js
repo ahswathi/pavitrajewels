@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./instafeed.module.css";
 import { Border } from "../../../components/maincomps/border/Border";
 import Slider from "react-slick";
@@ -6,13 +6,35 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Instafeed = () => {
+    const [sliderImg, setSliderImg] = useState([]);
     const images = [
         "/assets/pain2.png",
         "/assets/pain2.png",
         "/assets/pain2.png",
         "/assets/pain2.png",
         "/assets/pain2.png",
+        "/assets/pain2.png",
+        "/assets/pain2.png",
+        "/assets/pain2.png",
+        "/assets/pain2.png",
+        "/assets/pain2.png",
+        "/assets/pain2.png",
+        "/assets/pain2.png",
+        "/assets/pain2.png",
     ];
+
+    function chunkArray(arr, size) {
+        return arr.reduce((acc, _, i) =>
+            i % size === 0 ? [...acc, arr.slice(i, i + size)] : acc, []
+        );
+    }
+
+    useEffect(() => {
+        if (images.length > 0) {
+            const result = chunkArray(images, 2);
+            setSliderImg(result)
+        }
+    }, [])
 
     const settings = {
         dots: true,
@@ -54,11 +76,11 @@ const Instafeed = () => {
             <Border title='Pavitra Jewels' subtitle='Know us more by our customers' />
             <div className={styles.imageSlidermain}>
                 <div className={styles.imageSlider1}>
-                    <div className="slider-container">
+                    <div className="slider-container" style={{ width: "100%" }}>
                         <Slider {...settings}>
-                            {images.map((img, index) => (
-                                <>
-                                     <div className={styles.imageItem1} key={index}>
+                            {sliderImg.map((img, index) => (
+                                <div>
+                                    {/* <div className={styles.imageItem1} key={index}>
                                         <img src={img} alt={`Image ${index + 1}`} />
                                         <div className={styles.overlap}>
                                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,11 +102,17 @@ const Instafeed = () => {
                                             </svg>
 
                                         </div>
+                                    </div> */}
+                                    <div >
+                                        {
+                                            img.map((newImg, i) => (
+                                                <div className={index % 2 === 0 ? styles.imageItem2 : styles.imageItem1} key={index}>
+                                                    <img src={newImg} alt={`Image ${index + 1}`} />
+                                                </div>
+                                            ))
+                                        }
                                     </div>
-                                    <div className={styles.imageItem2} key={index}>
-                                        <img src={img} alt={`Image ${index + 1}`} />
-                                    </div>
-                                </>
+                                </div>
                             ))}
                         </Slider>
                     </div>

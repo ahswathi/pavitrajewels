@@ -11,6 +11,7 @@
 .imageSlider1 {
     display: flex;
     gap: 20px;
+    width: 100%;
 }
 
 .imageSlider2 {
@@ -39,6 +40,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.slider-container {
+    width: 100%;
 }
 
 .slider-container .slick-prev {
